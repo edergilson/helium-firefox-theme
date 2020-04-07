@@ -1,0 +1,35 @@
+/*
+ * helium-firefox-theme
+ * headerbar.css
+ *
+ * Copyright (c) 2019 Payson Wallach
+ *
+ * Released under the terms of the GNU General Public License, version 3
+ * (https://gnu.org/licenses/gpl.html)
+ */
+
+@import "omnibar.css";
+@import "omnibar-private.css";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* headerbar */
+#nav-bar {
+  padding: 5px 4px !important;
+}
+
+/* headerbar CSD colors */
+
+:root[tabsintitlebar] #nav-bar {
+  background: var(--helium-headerbar-background) !important;
+  border: none !important;
+  border-bottom: 1px solid var(--helium-headerbar-border-color) !important;
+  box-shadow: var(--helium-headerbar-box-shadow) !important;
+  border-color: mix(#000, var(--primary_color), 0.82);
+  box-shadow: inset 0 0 0 1px alpha (mix(#fff, var(--primary_color), 0.4), 0.4);
+}
+
+:root[tabsintitlebar] #nav-bar:-moz-window-inactive {
+  background: var(--helium-inactive-headerbar-background) !important;
+  border-bottom-color: var(--helium-inactive-headerbar-border-color) !important;
+  box-shadow: var(--helium-inactive-headerbar-box-shadow) !important;
+}

@@ -1,0 +1,181 @@
+/*
+ * helium-firefox-theme
+ * matching-autocomplete-width.css
+ *
+ * Copyright (c) 2019 Payson Wallach
+ *
+ * Released under the terms of the GNU General Public License, version 3
+ * (https://gnu.org/licenses/gpl.html)
+ */
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* set popover size and position */
+.urlbarView {
+  --box-width: calc(100vw - var(--item-padding-start) - var(--item-padding-end) + 8px);
+  --fixed-widths: calc((6px + 16px + 6px) + (16px + 9px) + 11px);
+  left: calc(var(--item-padding-start) - 8px) !important;
+  border-radius: 7px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  max-width: var(--box-width) !important;
+}
+
+/* results box */
+.urlbarView-body-inner {
+  max-width: var(--box-width) !important;
+}
+
+.urlbarView-row {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+  max-height: 35vh !important;
+  overflow-x: auto;
+  border-radius: 5px !important;
+}
+
+/* search panel  */
+
+.search-one-offs {
+  padding: 1em !important;
+}
+
+.search-panel-one-offs-header,
+.search-panel-one-offs {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.search-panel-one-offs {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+  margin-bottom: -4px !important;
+}
+
+/* search engines buttons */
+
+.searchbar-engine-one-off-item:not(.dummy) {
+  -moz-appearance: none !important;
+  --toolbarbutton-active-background: transparent !important;
+  --toolbarbutton-hover-background: transparent !important;
+  background: var(--helium-button-background) !important;
+  box-shadow: var(--helium-button-box-shadow);
+  border-radius: 5px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: var(--helium-button-border-color) !important;
+  border-bottom-color: var(--helium-button-border-accent-color) !important;
+  padding: 0 2px !important;
+  height: 28px !important;
+  color: var(--helium-toolbar-color) !important;
+  box-sizing: border-box !important;
+}
+
+.searchbar-engine-one-off-item:hover,
+.searchbar-engine-one-off-item[selected] {
+  background: var(--helium-button-hover-background) !important;
+  color: unset !important;
+}
+
+#urlbar-anon-search-settings-compact {
+  border-left-width: 1px !important;
+  border-bottom: 1px solid var(--helium-button-border-accent-color) !important;
+  border-radius: 5px;
+  margin-left: 6px !important;
+}
+
+/* convert search engines icons to symbolic
+.searchbar-engine-one-off-item:not(.search-setting-button-compact) .button-icon {
+  filter: var(--helium-convert-icon-to-symbolic-hack-filter);
+}
+
+/* Firefox 67 */
+/* TODO: Remove when FF =< 67 is deprecated or merge 69+ code. */
+
+#PopupAutoCompleteRichResult {
+  margin-left: 0 !important;
+  margin-top: -7px;
+}
+
+#PopupAutoCompleteRichResult {
+  background: var(--helium-popover-background) !important;
+  border: 1px solid !important;
+  border-color: var(--helium-popover-border-color) !important;
+  border-radius: 9px;
+  box-shadow: var(--helium-popover-shadow) !important;
+  /* BUG: Not showing any shadow at all */
+  color: var(--helium-toolbar-color) !important;
+  padding: 8px !important;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+  --box-width: calc(100vw - var(--item-padding-start) - var(--item-padding-end) - 42px);
+  max-width: var(--box-width);
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistitem {
+  padding-left: 0 !important;
+  padding-right: 5px !important;
+  border-inline-end-width: 0 !important;
+  max-width: calc(var(--box-width) - 5px);
+  display: flex;
+  align-items: center;
+}
+
+/* search panel  */
+
+#PopupAutoCompleteRichResult .search-panel-one-offs-header,
+#PopupAutoCompleteRichResult .search-panel-one-offs {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+#PopupAutoCompleteRichResult .search-panel-one-offs-header {
+  border-top: 1px solid var(--helium-popover-separator-color) !important;
+}
+
+#PopupAutoCompleteRichResult .search-panel-one-offs {
+  --item-padding-start: 0 !important;
+  --item-padding-end: 0 !important;
+}
+
+/* search engines buttons */
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item:not(.dummy) {
+  -moz-appearance: none !important;
+  --toolbarbutton-active-background: transparent !important;
+  --toolbarbutton-hover-background: transparent !important;
+  background: var(--helium-button-background) !important;
+  box-shadow: var(--helium-button-box-shadow);
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: var(--helium-button-border-color) !important;
+  border-bottom-color: var(--helium-button-border-accent-color) !important;
+  padding: 0 2px !important;
+  height: 28px !important;
+  color: var(--helium-toolbar-color) !important;
+  box-sizing: border-box !important;
+}
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item:hover,
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item[selected] {
+  background: var(--helium-button-hover-background) !important;
+  color: unset !important;
+}
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item:first-child {
+  border-radius: 5px 0 0 5px;
+  border-left-width: 1px !important;
+}
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item.last-engine {
+  border-radius: 0 5px 5px 0;
+}
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item.dummy {
+  display: none !important;
+}
+
+#PopupAutoCompleteRichResult .searchbar-engine-one-off-item:not(.last-row) {
+  box-sizing: border-box !important;
+}

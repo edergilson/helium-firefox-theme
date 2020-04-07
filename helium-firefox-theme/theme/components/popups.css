@@ -1,0 +1,116 @@
+/*
+ * helium-firefox-theme
+ * popups.css
+ *
+ * Copyright (c) 2019 Payson Wallach
+ *
+ * Released under the terms of the GNU General Public License, version 3
+ * (https://gnu.org/licenses/gpl.html)
+ */
+
+@import "popups-content.css";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* style menus */
+
+menupopup {
+  background: var(--helium-menu-background);
+  border: 1px solid var(--helium-menu-border-color);
+  border-radius: 5px;
+  padding: 4px 0;
+  color: var(--helium-toolbar-color) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* adjust popovers position */
+panel[type=arrow] {
+  margin-top: 9px !important;
+  max-height: 80vh !important;
+}
+
+.panel-arrowcontent
+{border-radius: 5px;}
+
+
+/* style popovers */
+
+/* FF 71+ fix */
+panel {
+  border-radius: 5px;
+}
+
+panel:not(.tooltip-xul-wrapper) .panel-arrowcontent {
+  background: var(--helium-popover-background) !important;
+  border: 1px solid !important;
+  border-color: var(--helium-popover-border-color) !important;
+  border-radius: 9px;
+  box-shadow: var(--helium-popover-shadow) !important;
+  color: var(--helium-toolbar-color) !important;
+}
+
+.panel-arrow {
+  fill: var(--helium-popover-background) !important;
+  stroke: var(--helium-popover-border-color) !important;
+}
+
+.panel-footer {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.panel-footer toolbarseparator {
+  display: none !important;
+}
+
+.panel-arrowcontent .panel-arrowcontent,
+.panel-header,
+.PanelUI-subView,
+.panel-subview-body,
+#widget-overflow-mainView,
+panelview {
+  background: transparent !important;
+}
+
+panelview {
+  margin-right: -1px;
+}
+
+/* style popovers menu buttons */
+
+toolbarbutton {
+  border-radius: 0;
+}
+
+.subviewbutton {
+  border-radius: 3px !important;
+  color: var(--helium-toolbar-color) !important;
+}
+
+.subviewbutton[disabled] {
+  opacity: 0.5 !important;
+}
+
+.subviewbutton:not([disabled]):hover {
+  background: var(--helium-popover-button-hover-background) !important;
+}
+
+/* style popover separators */
+
+toolbarseparator,
+menuseparator {
+  border-color: var(--helium-popover-separator-color) !important;
+}
+
+toolbarseparator:not([orient="vertical"]) {
+  margin: 8px 0 !important;
+}
+
+toolbarseparator[orient="vertical"] {
+  margin: 0 3px !important;
+}
+
+/* remove popover header separator */
+.panel-header {
+  border-bottom: 0 !important;
+}

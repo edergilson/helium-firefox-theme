@@ -1,0 +1,118 @@
+/*
+ * helium-firefox-theme
+ * findbar.css
+ *
+ * Copyright (c) 2019 Payson Wallach
+ *
+ * Released under the terms of the GNU General Public License, version 3
+ * (https://gnu.org/licenses/gpl.html)
+ */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@keyframes scale-in {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+findbar[hidden="true"] {
+  animation: 0.2s scale-out;
+}
+
+findbar .findbar-container .findbar-textbox {
+  background-color: var(--url-and-searchbar-background-color) !important;
+  border-color: var(--backbutton-border-color) !important;
+}
+
+findbar .findbar-container .findbar-textbox[status="notfound"] {
+  background-color: #E74C3C !important;
+  color: white !important;
+}
+
+findbar .findbar-container .findbar-find-previous,
+findbar .findbar-container .findbar-find-next {
+  background: transparent !important;
+  border-color: var(--backbutton-border-color) !important;
+}
+
+findbar .findbar-container .findbar-find-previous:hover,
+findbar .findbar-container .findbar-find-previous:focus,
+findbar .findbar-container .findbar-find-next:hover,
+findbar .findbar-container .findbar-find-next:focus {
+  background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+findbar .findbar-container .findbar-button {
+  border: 1px solid var(--backbutton-border-color);
+  border-radius: 5px;
+}
+
+window[lwtheme="true"] findbar {
+  background: var(--lwt-header-image) !important;
+  background-attachment: fixed !important;
+  background-position: top right !important;
+}
+
+window[lwtheme="true"] findbar .findbar-textbox {
+  color: var(--lwt-text-color) !important;
+  background-color: var(--toolbar-bgcolor) !important;
+}
+
+window[lwtheme="true"] findbar .findbar-textbox[status="notfound"] {
+  background-color: #E74C3C !important;
+  color: white !important;
+}
+
+window[lwtheme="true"] findbar .findbar-button[checked="true"] {
+  font-weight: bold;
+  background-color: var(--toolbar-bgcolor) !important;
+}
+
+window[lwtheme="true"] findbar .findbar-find-status,
+window[lwtheme="true"] findbar .found-matches {
+  color: var(--lwt-text-color) !important;
+}
+
+findbar-container {
+  display: flex;
+  align-items: center;
+  animation: 0.2s scale-in;
+  transform-origin: top center;
+  background: var(--toolbar-bgcolor) !important;
+  padding: 4px 6px 4px 10px;
+  border-radius: 0 0 5px;
+  position: absolute;
+  right: 2em;
+}
+
+hbox[anonid="findbar-textbox-wrapper"] {
+  margin: 2px 6px 4px 6px;
+}
+
+.findbar-closebutton {
+	margin: 6px 12px 6px 0 !important;
+}
+
+.findbar-container toolbarbutton.findbar-button {
+  background: transparent !important;
+  margin: 0px 4px 0 4px !important;
+}
+
+.findbar-container toolbarbutton.findbar-button:enabled {
+  background-color: var(--helium-button-active-background) !important;
+}
