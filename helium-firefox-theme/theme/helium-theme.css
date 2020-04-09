@@ -27,6 +27,7 @@
 
 :root {
   --space-above-tabbar: 0 !important;
-}
+  --popup-border-radius: 4px;
 
+  --helium-headerbar-item-border-radius: 4px !important;
 }
