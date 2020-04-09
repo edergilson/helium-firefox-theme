@@ -1,0 +1,21 @@
+{
+  "name": "helium-firefox-theme",
+  "version": "0.1.0",
+  "description": "Firefox theme for Helium GTK theme.",
+  "scripts": {
+    "beautify": "stylelint --fix **/*.css"
+    "test": "stylelint **/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^13.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paysonwallach/helium-firefox-theme.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/paysonwallach/helium-firefox-theme/issues"
+  },
+  "homepage": "https://github.com/paysonwallach/helium-firefox-theme#readme"
+}
