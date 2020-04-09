@@ -54,8 +54,8 @@ panelview vbox.panel-subview-body > toolbarbutton label {
 
 /* main menu */
 #appMenu-popup .panel-banner-item::after {
-  -moz-box-ordinal-group: 0;
   margin: 0 8px 0 0 !important;
+  -moz-box-ordinal-group: 0;
 }
 
 /* user sync account remove avatar */
@@ -82,10 +82,10 @@ panelview vbox.panel-subview-body > toolbarbutton label {
 /* downloads popover */
 
 #downloadsPanel-mainView .download-state {
+  display: flex;
   padding: 8px !important;
   border: 0 !important;
   border-radius: 5px !important;
-  display: flex;
   align-items: center;
 }
 
@@ -98,8 +98,8 @@ panelview vbox.panel-subview-body > toolbarbutton label {
 }
 
 #downloadsPanel-mainView .downloadMainArea {
-  flex: 1;
   display: flex;
+  flex: 1;
 }
 
 #downloadsPanel-mainView .downloadMainArea:hover {
@@ -112,10 +112,10 @@ panelview vbox.panel-subview-body > toolbarbutton label {
 }
 
 #downloadsPanel-mainView .downloadContainer {
-  margin-inline-end: 0 !important;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  margin-inline-end: 0 !important;
 }
 
 #downloadsPanel-mainView .download-state .downloadButton .button-box {

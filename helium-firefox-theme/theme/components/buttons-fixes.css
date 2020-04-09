@@ -17,19 +17,19 @@
 }
 
 :root:not([uidensity=compact]) #back-button > .toolbarbutton-icon {
-  background-color: unset !important;
-  border: unset !important;
   width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
   height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
   padding: var(--toolbarbutton-inner-padding) !important;
+  background-color: unset !important;
+  border: unset !important;
   border-radius: var(--toolbarbutton-border-radius);
   box-shadow: none !important;
 }
 
 :root:not([uidensity=compact]) #back-button:not([disabled]):not([open]):hover > .toolbarbutton-icon {
   background-color: var(--toolbarbutton-hover-background) !important;
-  box-shadow: unset;
   border-color: unset;
+  box-shadow: unset;
 }
 
 :root:not([uidensity=compact]) #back-button[open] > .toolbarbutton-icon,
@@ -113,10 +113,10 @@
 }
 
 .close-icon:not(.tab-close-button) image {
-  filter: var(--helium-window-icons-hack-filter) !important;
-  height: 16px !important;
   width: 16px !important;
+  height: 16px !important;
   margin: 6px !important;
+  filter: var(--helium-window-icons-hack-filter) !important;
 }
 
 #appMenu-popup .panel-banner-item[notificationid="update-restart"]::after {

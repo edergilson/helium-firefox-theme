@@ -27,9 +27,9 @@
 }
 
 #sidebar-splitter {
+  width: 1px !important;
   background: var(--helium-toolbar-border-color) !important;
   border: 0 !important;
-  width: 1px !important;
 }
 
 #sidebar-splitter:-moz-window-inactive {

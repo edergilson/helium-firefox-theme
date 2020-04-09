@@ -35,18 +35,18 @@
 .menulist-label-box,
 .expander-down,
 .expander-up {
-  -moz-appearance: none !important;
+  height: 28px !important;
+  max-height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  padding: 0 2px !important;
+  color: var(--helium-toolbar-color) !important;
   background: var(--helium-button-background) !important;
-  box-shadow: var(--helium-button-box-shadow) !important;
   border: 1px solid var(--helium-button-border-color) !important;
   border-bottom-color: var(--helium-button-border-accent-color) !important;
   border-radius: var(--helium-headerbar-item-border-radius);
-  padding: 0 2px !important;
-  height: 28px !important;
-  max-height: 28px !important;
-  min-height: 28px !important;
-  min-width: 28px !important;
-  color: var(--helium-toolbar-color) !important;
+  box-shadow: var(--helium-button-box-shadow) !important;
+  -moz-appearance: none !important;
 }
 
 /* buttons with margins */
@@ -87,15 +87,15 @@
 .menulist-label-box,
 #sidebar-switcher-target,
 #viewButton {
-  padding: 2px 16px !important;
   position: relative;
+  padding: 2px 16px !important;
 }
 
 .menulist-label-box::after {
   /* arrow position */
   position: absolute !important;
-  right: 8px !important;
   top: 8px !important;
+  right: 8px !important;
 }
 
 #sidebar-switcher-arrow,
@@ -129,8 +129,8 @@
 menulist:hover .menulist-label-box,
 .expander-down:hover,
 .expander-up:hover {
-  outline: 0 !important;
   background: var(--helium-button-hover-background) !important;
+  outline: 0 !important;
 }
 
 /* active buttons */
@@ -156,10 +156,10 @@ menulist[open] .menulist-label-box,
 .expander-down:active,
 .expander-up:active {
   background: var(--helium-button-active-background) !important;
-  box-shadow: var(--helium-button-active-box-shadow) !important;
   border-color: var(--helium-button-active-border-color) !important;
-  border-bottom-color: var(--helium-button-active-border-color) !important;
   border-top-color: var(--helium-button-active-border-accent-color) !important;
+  border-bottom-color: var(--helium-button-active-border-color) !important;
+  box-shadow: var(--helium-button-active-box-shadow) !important;
 }
 
 /* disabled buttons */
@@ -189,24 +189,24 @@ menulist[open] .menulist-label-box,
 #sidebar-switcher-target:-moz-window-inactive,
 #viewButton:-moz-window-inactive {
   background: var(--helium-inactive-button-background) !important;
-  box-shadow: var(--helium-inactive-button-box-shadow) !important;
   border-color: var(--helium-inactive-button-border-color) !important;
+  box-shadow: var(--helium-inactive-button-box-shadow) !important;
 }
 
 /* flat buttons */
 .subviewbutton-back:not(#hack),
 .close-icon:not(.tab-close-button) {
   background: transparent !important;
-  box-shadow: none !important;
   border-color: transparent !important;
   border-radius: var(--helium-headerbar-item-border-radius);
+  box-shadow: none !important;
 }
 
 .subviewbutton-back:not(#hack):not(:active):hover,
 .close-icon:not(.tab-close-button):not(:active):hover {
-  box-shadow: var(--helium-button-box-shadow) !important;
   border-color: var(--helium-button-border-color) !important;
   border-bottom-color: var(--helium-button-border-accent-color) !important;
+  box-shadow: var(--helium-button-box-shadow) !important;
 }
 
 /* circle buttons */
@@ -222,10 +222,10 @@ menulist[open] .menulist-label-box,
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous {
+  margin-right: 0 !important;
+  border-right-width: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  border-right-width: 0 !important;
-  margin-right: 0 !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
@@ -235,9 +235,9 @@ menulist[open] .menulist-label-box,
 #context-navigation menuitem:not(:first-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-container toolbarbutton.findbar-find-next {
+  margin-left: 0 !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  margin-left: 0 !important;
 }
 
 #nav-bar #back-button:not(#hack),
@@ -257,11 +257,11 @@ menulist[open] .menulist-label-box,
 button.popup-notification-primary-button,
 #editBookmarkPanelDoneButton {
   color: white !important;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.559216) !important;
   background: var(--helium-button-suggested-action-background) !important;
   border-color: var(--helium-button-suggested-action-border-color) !important;
   border-bottom-color: var(--helium-button-suggested-action-border-accent-color) !important;
   box-shadow: var(--helium-button-suggested-action-box-shadow) !important;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.559216) !important;
 }
 
 #appMenu-popup .panel-banner-item[notificationid="update-restart"]:hover,
@@ -283,6 +283,7 @@ button.popup-notification-primary-button.popup-notification-button:active,
 
 #editBookmarkPanelRemoveButton {
   color: white !important;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.558275) !important;
   background: var(--helium-error-color) !important;
   border-color: var(--helium-error-color) !important;
   box-shadow:
@@ -290,7 +291,6 @@ button.popup-notification-primary-button.popup-notification-button:active,
     inset 0 1px 0 0 alpha (var(--helium-error-color), 0.45),
     inset 0 -1px 0 0 alpha (var(--helium-error-color), 0.15),
     0 1px 0 0 alpha (var(--helium-error-color), 0.15);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.558275) !important;
 }
 
 #editBookmarkPanelRemoveButton:active {

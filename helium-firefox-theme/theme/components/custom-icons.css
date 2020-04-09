@@ -11,12 +11,12 @@
 
 /* popovers subview menu arrow */
 .PanelUI-subView .subviewbutton-nav::after {
-  content: "" !important;
+  width: 16px;
+  height: 16px;
+  margin-top: -2px !important;
   background: url("../icons/pan-start-symbolic.svg");
   background-size: contain;
-  height: 16px;
-  width: 16px;
-  margin-top: -2px !important;
+  content: "" !important;
 }
 
 /* popovers subview back button */
@@ -26,10 +26,10 @@
 
 /* sub-menu arrow */
 .menu-right {
-  -moz-appearance: none !important;
-  list-style-image: url("../icons/pan-end-symbolic.svg") !important;
   width: 16px !important;
   height: 16px !important;
+  list-style-image: url("../icons/pan-end-symbolic.svg") !important;
+  -moz-appearance: none !important;
 }
 
 menu[disabled] > .menu-right {
@@ -47,10 +47,10 @@ menu[disabled] > .menu-right {
 .expander-down > .button-box,
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker {
-  -moz-appearance: none !important;
-  list-style-image: url("../icons/pan-down-symbolic.svg") !important;
   width: 16px !important;
   height: 16px !important;
+  list-style-image: url("../icons/pan-down-symbolic.svg") !important;
+  -moz-appearance: none !important;
 }
 
 .menulist-label-box::after {
@@ -59,9 +59,9 @@ menu[disabled] > .menu-right {
 
 /* tree views */
 treechildren::-moz-tree-twisty {
-  list-style-image: url("../icons/pan-down-symbolic.svg") !important;
   width: 16px !important;
   height: 16px !important;
+  list-style-image: url("../icons/pan-down-symbolic.svg") !important;
 }
 
 treechildren::-moz-tree-twisty(open) {
@@ -86,10 +86,10 @@ treechildren::-moz-tree-twisty(selected, focus, open) {
 
 /* arrow-up buttons */
 .expander-up > .button-box {
-  -moz-appearance: none !important;
-  list-style-image: url("../icons/pan-up-symbolic.svg") !important;
   width: 16px !important;
   height: 16px !important;
+  list-style-image: url("../icons/pan-up-symbolic.svg") !important;
+  -moz-appearance: none !important;
 }
 
 /* search entries */

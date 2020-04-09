@@ -15,17 +15,17 @@
 #searchbar,
 #search-box,
 .findbar-textbox {
-  -moz-appearance: none !important;
+  height: 28px !important;
+  max-height: 28px !important;
+  padding: 6px 8px !important;
+  margin: 0 !important;
+  color: var(--helium-urlbar-color) !important;
   background: var(--helium-urlbar-background) !important;
   border: 1px solid var(--helium-urlbar-border-color) !important;
   border-radius: 5px !important;
   box-shadow: var(--helium-urlbar-box-shadow) !important;
-  color: var(--helium-urlbar-color) !important;
-  height: 28px !important;
-  max-height: 28px !important;
-  margin: 0 !important;
-  padding: 6px 8px !important;
   box-sizing: border-box;
+  -moz-appearance: none !important;
 }
 
 /* entries focused */
@@ -34,10 +34,10 @@
 #search-box[focused],
 .findbar-textbox[focused],
 .findbar-textbox:focus {
+  background: var(--helium-urlbar-background) !important;
   outline: 2px solid var(--helium-focused-urlbar-border-color) !important;
   outline-offset: -2px;
   -moz-outline-radius: 5px;
-  background: var(--helium-urlbar-background) !important;
 }
 
 /* inactive window entries */
@@ -45,17 +45,17 @@
 #searchbar:-moz-window-inactive,
 #search-box:-moz-window-inactive,
 .findbar-textbox:-moz-window-inactive {
+  color: var(--helium-inactive-urlbar-color) !important;
   background: var(--helium-inactive-urlbar-background) !important;
   border-color: var(--helium-inactive-urlbar-border-color) !important;
   box-shadow: var(--helium-inactive-urlbar-box-shadow) !important;
-  color: var(--helium-inactive-urlbar-color) !important;
 }
 
 /* entries combined */
 .findbar-textbox {
+  border-right-width: 0 !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  border-right-width: 0 !important;
 }
 
 .findbar-textbox[focused],
@@ -66,15 +66,15 @@
 /* entries fixes */
 #urlbar,
 #searchbar {
-  margin: 0 3px !important;
   padding: 0 !important;
+  margin: 0 3px !important;
 }
 
 .searchbar-textbox {
-  border: 0 !important;
+  min-height: auto !important;
   padding: 0 !important;
   margin: 0 !important;
-  min-height: auto !important;
+  border: 0 !important;
 }
 
 #searchbar > .searchbar-textbox[focused] .searchbar-search-button:not(#hack) {

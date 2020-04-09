@@ -24,8 +24,8 @@
   background: var(--helium-headerbar-background) !important;
   border: none !important;
   border-bottom: 1px solid var(--helium-headerbar-border-color) !important;
-  box-shadow: var(--helium-headerbar-box-shadow) !important;
   border-color: mix(#000, var(--helium-primary-color), 0.82);
+  box-shadow: var(--helium-headerbar-box-shadow) !important;
   box-shadow: inset 0 0 0 1px alpha (mix(#fff, var(--helium-primary-color), 0.4), 0.4);
 }
 

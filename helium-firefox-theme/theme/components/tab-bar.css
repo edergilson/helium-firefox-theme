@@ -46,8 +46,8 @@ tab[selected]:-moz-window-inactive {
 }
 
 .tab-label {
-  -moz-box-flex: 1 !important;
   text-align: center !important;
+  -moz-box-flex: 1 !important;
 }
 
 /* prevent tab icons size breaking */
@@ -77,15 +77,15 @@ tab[selected]:-moz-window-inactive {
 
 /* close tab button */
 .tabbrowser-tab .tab-close-button {
-  -moz-appearance: none !important;
-  box-sizing: content-box;
-  border-radius: 3px !important;
-  box-shadow: none;
-  list-style-image: var(--helium-tab-close-icon) !important;
-  height: 16px;
-  opacity: 0.3;
-  padding: 2px;
   width: 16px;
+  height: 16px;
+  padding: 2px;
+  list-style-image: var(--helium-tab-close-icon) !important;
+  border-radius: 3px !important;
+  opacity: 0.3;
+  box-shadow: none;
+  box-sizing: content-box;
+  -moz-appearance: none !important;
 }
 
 :root:-moz-window-inactive .tab-close-button:not(#hack) {
@@ -121,20 +121,20 @@ tab[selected]:-moz-window-inactive {
 /* active tab */
 
 .tab-background[selected=true] {
+  margin: 0 -1px !important;
   background-color: var(--helium-tab-active-background) !important;
   background-image: none !important;
   border: 1px solid var(--helium-tab-separator-color) !important;
-  border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-top: none !important;
+  border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-image: none !important;
-  margin: 0 -1px !important;
 }
 
 .tab-background[selected=true]:-moz-window-inactive {
   background-color: var(--helium-inactive-tab-active-background) !important;
   border: 1px solid var(--helium-tab-separator-color) !important;
-  border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-top: none !important;
+  border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-image: none !important;
 }
 
@@ -142,28 +142,28 @@ tab[selected]:-moz-window-inactive {
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: var(--helium-tab-hover-background) !important;
-  border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
+  border-image: none !important;
 }
 
 :root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background[selected=true] {
   background-color: var(--helium-tab-active-hover-background) !important;
-  border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
+  border-image: none !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
 #TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
 #TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
   background-color: var(--helium-tab-active-hover-background) !important;
-  border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
+  border-image: none !important;
 }
 
 :root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: var(--helium-tab-hover-background) !important;
-  border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
+  border-image: none !important;
 }
 
 /* full width tabs */
@@ -213,11 +213,11 @@ tab[selected]:-moz-window-inactive {
 }
 
 #TabsToolbar .tab-close-button {
+  list-style-image: url('data:image/svg+xml;utf8,\<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">\<line x1="4.5" y1="4.5" x2="11.5" y2="11.5" stroke="rgb(84,82,84)" stroke-width="1"/>\<line x1="4.5" y1="11.5" x2="11.5" y2="4.5" stroke="rgb(84,82,84)" stroke-width="1"/>\</svg>') !important;
+  transition: opacity 200ms !important;
   -moz-box-ordinal-group: 0 !important;
   -moz-margin-start: -4px !important;
   -moz-margin-end: 4px !important;
-  transition: opacity 200ms !important;
-  list-style-image: url('data:image/svg+xml;utf8,\<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">\<line x1="4.5" y1="4.5" x2="11.5" y2="11.5" stroke="rgb(84,82,84)" stroke-width="1"/>\<line x1="4.5" y1="11.5" x2="11.5" y2="4.5" stroke="rgb(84,82,84)" stroke-width="1"/>\</svg>') !important;
 }
 
 @media (max-resolution: 1.9dppx) {
@@ -231,9 +231,8 @@ tab[selected]:-moz-window-inactive {
 :root .toolbarbutton-1 {
   --toolbarbutton-border-radius: 0;
   --toolbarbutton-outer-padding: 0;
-
-  border-left: 1px solid var(--helium-tab-separator-color);
   margin-left: -1px !important;
+  border-left: 1px solid var(--helium-tab-separator-color);
 }
 
 .toolbarbutton-1:hover {

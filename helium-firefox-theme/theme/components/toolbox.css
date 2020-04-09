@@ -20,8 +20,8 @@
 /* toolbox colors */
 
 #navigator-toolbox {
-  border: 0 !important;
   background: none !important;
+  border: 0 !important;
 }
 
 .toolbarbutton-icon {
@@ -34,8 +34,8 @@
 #toolbar-menubar,
 #TabsToolbar,
 findbar {
-  border: 0 !important;
   background: var(--helium-toolbar-background) !important;
+  border: 0 !important;
   border-bottom: 1px solid var(--helium-toolbar-border-color) !important;
 }
 
@@ -62,8 +62,8 @@ findbar:-moz-window-inactive label,
 }
 
 #PersonalToolbar {
-  padding-top: 2px !important;
   height: 32px;
+  padding-top: 2px !important;
 }
 
 /* overrides: remove border below the menu bar / above the header bar */

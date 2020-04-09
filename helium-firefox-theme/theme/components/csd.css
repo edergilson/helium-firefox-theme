@@ -26,10 +26,10 @@
 
 /* window buttons box */
 .titlebar-buttonbox-container {
-  display: block;
   position: absolute;
   top: 12px;
   left: 0;
+  display: block;
   padding: 0 6px;
 }
 
