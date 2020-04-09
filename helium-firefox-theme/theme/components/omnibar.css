@@ -29,11 +29,11 @@ toolbarspring {
   margin: -1px !important;
 }
 
-#searchbar>.searchbar-textbox[focused] .searchbar-search-button {
+#searchbar > .searchbar-textbox[focused] .searchbar-search-button {
   margin-left: -1px !important;
 }
 
-#searchbar>.searchbar-textbox[focused] .search-go-button {
+#searchbar > .searchbar-textbox[focused] .search-go-button {
   margin-right: -1px !important;
 }
 

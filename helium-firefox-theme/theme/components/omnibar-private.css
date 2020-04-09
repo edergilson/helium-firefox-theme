@@ -10,7 +10,7 @@
 
 @namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-:root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type:before {
+:root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type::before {
   background: url("../icons/user-not-tracked.svg") no-repeat;
   background-size: contain;
   content: "";
@@ -24,7 +24,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type:before {
+  :root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type::before {
     filter: invert(100%);
   }
 }

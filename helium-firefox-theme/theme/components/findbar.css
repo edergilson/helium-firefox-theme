@@ -14,7 +14,6 @@
   0% {
     transform: scaleY(0);
   }
-
   100% {
     transform: scaleY(1);
   }
@@ -24,7 +23,6 @@
   0% {
     transform: scaleY(1);
   }
-
   100% {
     transform: scaleY(0);
   }
@@ -40,7 +38,7 @@ findbar .findbar-container .findbar-textbox {
 }
 
 findbar .findbar-container .findbar-textbox[status="notfound"] {
-  background-color: #E74C3C !important;
+  background-color: #e74c3c !important;
   color: white !important;
 }
 
@@ -74,7 +72,7 @@ window[lwtheme="true"] findbar .findbar-textbox {
 }
 
 window[lwtheme="true"] findbar .findbar-textbox[status="notfound"] {
-  background-color: #E74C3C !important;
+  background-color: #e74c3c !important;
   color: white !important;
 }
 
@@ -101,16 +99,16 @@ findbar-container {
 }
 
 hbox[anonid="findbar-textbox-wrapper"] {
-  margin: 2px 6px 4px 6px;
+  margin: 2px 6px 4px;
 }
 
 .findbar-closebutton {
-	margin: 6px 12px 6px 0 !important;
+  margin: 6px 12px 6px 0 !important;
 }
 
 .findbar-container toolbarbutton.findbar-button {
   background: transparent !important;
-  margin: 0px 4px 0 4px !important;
+  margin: 0 4px !important;
 }
 
 .findbar-container toolbarbutton.findbar-button:enabled {

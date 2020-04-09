@@ -21,7 +21,7 @@
  * You should move the new tab button somewhere else for this to work, because by
  * default it is on the tab bar too.
  */
-/*@import "theme/hide-single-tab.css"; /**/
+/* @import "theme/hide-single-tab.css"; /**/
 
 /* Limit the URL bar's autocompletion popup's width to the URL bar's width */
 @import "theme/matching-autocomplete-width.css";
@@ -32,7 +32,7 @@
 /**/
 
 /* Make all tab icons look kinda like symbolic icons */
-/*@import "theme/symbolic-tab-icons.css"; /**/
+/* @import "theme/symbolic-tab-icons.css"; /**/
 
 /* Shrink reload button in URL bar */
 #pageAction-urlbar-_e1ed7a80-7c11-4f7e-968b-79b551a0067f_ {

@@ -83,13 +83,13 @@ tab[selected]:-moz-window-inactive {
   box-shadow: none;
   list-style-image: var(--helium-tab-close-icon) !important;
   height: 16px;
-  opacity: .3;
+  opacity: 0.3;
   padding: 2px;
   width: 16px;
 }
 
 :root:-moz-window-inactive .tab-close-button:not(#hack) {
-  opacity: .18 !important;
+  opacity: 0.18 !important;
 }
 
 .tab-close-button:hover {
@@ -110,11 +110,11 @@ tab[selected]:-moz-window-inactive {
 
 /* move container lines to the top */
 
-.tabbrowser-tab[usercontextid]>.tab-stack>.tab-background {
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background {
   border-top: 3px solid var(--identity-tab-color) !important;
 }
 
-.tabbrowser-tab[usercontextid]>.tab-stack>.tab-background>.tab-bottom-line {
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-bottom-line {
   display: none;
 }
 
@@ -140,27 +140,27 @@ tab[selected]:-moz-window-inactive {
 
 /* tab hover */
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]) {
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: var(--helium-tab-hover-background) !important;
   border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
 }
 
-:root:not(:-moz-window-inactive) .tabbrowser-tab:hover>.tab-stack>.tab-background[selected=true] {
+:root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background[selected=true] {
   background-color: var(--helium-tab-active-hover-background) !important;
   border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
 }
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]),
-#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]),
-#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background>.tab-line:not([selected=true]) {
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
+#TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
+#TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
   background-color: var(--helium-tab-active-hover-background) !important;
   border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
 }
 
-:root:not(:-moz-window-inactive) .tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]) {
+:root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: var(--helium-tab-hover-background) !important;
   border-image: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
@@ -175,7 +175,7 @@ tab[selected]:-moz-window-inactive {
 
 .tabbrowser-tab:not([style^="max-width"]):not([pinned]):not([fadein]),
 .tabbrowser-tab[style^="max-width: 100 !important;"]:not([pinned]):not([fadein]) {
-  max-width: .1px !important;
+  max-width: 0.1px !important;
 }
 
 /* remove blank spaces on tabs start and end */
@@ -231,6 +231,7 @@ tab[selected]:-moz-window-inactive {
 :root .toolbarbutton-1 {
   --toolbarbutton-border-radius: 0;
   --toolbarbutton-outer-padding: 0;
+
   border-left: 1px solid var(--helium-tab-separator-color);
   margin-left: -1px !important;
 }

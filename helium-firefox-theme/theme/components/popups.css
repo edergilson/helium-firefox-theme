@@ -9,6 +9,7 @@
  */
 
 @import "popups-content.css";
+
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* style menus */
@@ -28,9 +29,7 @@ panel[type=arrow] {
   max-height: 80vh !important;
 }
 
-.panel-arrowcontent
-{border-radius: 5px;}
-
+.panel-arrowcontent { border-radius: 5px; }
 
 /* style popovers */
 
@@ -83,7 +82,6 @@ toolbarbutton {
 }
 
 .subviewbutton {
-  border-radius: 3px !important;
   color: var(--helium-toolbar-color) !important;
 }
 
@@ -99,7 +97,11 @@ toolbarbutton {
 
 toolbarseparator,
 menuseparator {
-  border-color: var(--helium-popover-separator-color) !important;
+  -moz-appearance: none !important;
+  height: 2px !important;
+  border-top: 1px solid var(--helium-popover-separator-color);
+  border-bottom: 1px solid var(--helium-popover-separator-shadow-color);
+  margin: 4px 0 -1px;
 }
 
 toolbarseparator:not([orient="vertical"]) {

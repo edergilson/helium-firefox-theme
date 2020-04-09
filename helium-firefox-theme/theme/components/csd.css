@@ -124,7 +124,7 @@
   display: flex !important;
   height: 25px !important;
   justify-content: space-between !important;
-  margin: 0px !important;
+  margin: 0 !important;
   position: relative !important;
   width: calc(100vw - 6px) !important;
   z-index: 1 !important;

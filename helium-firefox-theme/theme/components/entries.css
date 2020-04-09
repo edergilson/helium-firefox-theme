@@ -37,6 +37,7 @@
   outline: 2px solid var(--helium-focused-urlbar-border-color) !important;
   outline-offset: -2px;
   -moz-outline-radius: 5px;
+  background: var(--helium-urlbar-background) !important;
 }
 
 /* inactive window entries */
@@ -76,6 +77,6 @@
   min-height: auto !important;
 }
 
-#searchbar>.searchbar-textbox[focused] .searchbar-search-button:not(#hack) {
+#searchbar > .searchbar-textbox[focused] .searchbar-search-button:not(#hack) {
   margin: 0 !important;
 }

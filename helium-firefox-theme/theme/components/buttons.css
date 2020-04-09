@@ -9,6 +9,7 @@
  */
 
 @import "buttons-fixes.css";
+
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 #appMenu-popup .toolbaritem-combined-buttons toolbarseparator {
@@ -90,7 +91,7 @@
   position: relative;
 }
 
-.menulist-label-box:after {
+.menulist-label-box::after {
   /* arrow position */
   position: absolute !important;
   right: 8px !important;
@@ -100,10 +101,10 @@
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker {
   /* arrow position, type b */
-  transform: translate(6px, 0)
+  transform: translate(6px, 0);
 }
 
-.menulist-label-box:after {
+.menulist-label-box::after {
   /* create arrow if icon tag no exist */
   content: "";
 }
@@ -174,7 +175,7 @@ menulist[open] .menulist-label-box,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled] image,
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled] image,
 #context-navigation menuitem[disabled] image {
-  opacity: .4 !important;
+  opacity: 0.4 !important;
 }
 
 #nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled]:hover,

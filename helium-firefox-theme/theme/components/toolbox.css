@@ -68,7 +68,7 @@ findbar:-moz-window-inactive label,
 
 /* overrides: remove border below the menu bar / above the header bar */
 
-#TabsToolbar:not([collapsed="true"])+#nav-bar {
+#TabsToolbar:not([collapsed="true"]) + #nav-bar {
   border-top-width: 0 !important;
 }
 
@@ -105,11 +105,11 @@ findbar {
   padding-bottom: 0 !important;
 }
 
-#TabsToolbar[movingtab]>.tabbrowser-tabs {
+#TabsToolbar[movingtab] > .tabbrowser-tabs {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
 
-#TabsToolbar[movingtab]+#nav-bar {
+#TabsToolbar[movingtab] + #nav-bar {
   margin-top: 0 !important;
 }
