@@ -15,6 +15,7 @@
 @import "components/findbar.css";
 @import "components/headerbar.css";
 @import "components/popups.css";
+@import "components/sidebar.css";
 @import "components/subdue-tab-transition.css";
 @import "components/tab-bar.css";
 @import "components/toolbox.css";
@@ -28,41 +29,4 @@
   --space-above-tabbar: 0 !important;
 }
 
-/* sidebar */
-
-#sidebar-box,
-.sidebar-panel {
-  background: var(--helium-sidebar-background) !important;
-}
-
-#sidebar-box:-moz-window-inactive,
-.sidebar-panel:-moz-window-inactive {
-  background: var(--helium-inactive-sidebar-background) !important;
-}
-
-#sidebar-box:-moz-window-inactive label,
-#sidebar-box:-moz-window-inactive image,
-.sidebar-panel:-moz-window-inactive label,
-.sidebar-panel:-moz-window-inactive image,
-.sidebar-placesTreechildren:-moz-window-inactive {
-  opacity: 0.7 !important;
-}
-
-#sidebar-splitter {
-  background: var(--helium-toolbar-border-color) !important;
-  border: 0 !important;
-  width: 1px !important;
-}
-
-#sidebar-splitter:-moz-window-inactive {
-  background: var(--helium-inactive-toolbar-border-color) !important;
-}
-
-#sidebar-header {
-  padding: 6px !important;
-  border-bottom: 1px solid var(--helium-toolbar-border-color) !important;
-}
-
-#sidebar-search-container {
-  padding: 6px !important;
 }
