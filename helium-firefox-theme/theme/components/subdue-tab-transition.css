@@ -2,13 +2,13 @@
  * helium-firefox-theme
  * subdue-tab-transition.css
  *
- * subdues the white flash transition that occurs before opening or after
- * closing a tab.
- *
  * Copyright © 2020 Payson Wallach
  *
  * Released under the terms of the GNU General Public License, version 3
  * (https://gnu.org/licenses/gpl.html)
+ *
+ * Subdues the white flash transition that occurs before opening or after
+ * closing a tab.
  */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
