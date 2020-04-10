@@ -120,7 +120,8 @@ tab[selected]:-moz-window-inactive {
 
 /* active tab */
 
-.tab-background[selected=true] {
+.tab-background[selected=true],
+.tab-background[selected=true]:hover {
   margin: 0 -1px !important;
   background-color: var(--helium-tab-active-background) !important;
   background-image: none !important;
@@ -142,20 +143,6 @@ tab[selected]:-moz-window-inactive {
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
   background-color: var(--helium-tab-hover-background) !important;
-  border-bottom: 1px solid var(--helium-tab-border-color) !important;
-  border-image: none !important;
-}
-
-:root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background[selected=true] {
-  background-color: var(--helium-tab-active-hover-background) !important;
-  border-bottom: 1px solid var(--helium-tab-border-color) !important;
-  border-image: none !important;
-}
-
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
-#TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
-#TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected=true]) {
-  background-color: var(--helium-tab-active-hover-background) !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-image: none !important;
 }
