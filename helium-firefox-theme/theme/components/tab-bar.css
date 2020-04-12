@@ -128,7 +128,7 @@ spacer[part="arrowscrollbox-overflow-end-indicator"] {
   margin: 0 -1px !important;
   background-color: var(--helium-tab-active-background) !important;
   background-image: none !important;
-  border: 1px solid var(--helium-tab-separator-color) !important;
+  border: 1px solid var(--helium-tab-border-color) !important;
   border-top: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-image: none !important;
@@ -136,7 +136,7 @@ spacer[part="arrowscrollbox-overflow-end-indicator"] {
 
 .tab-background[selected=true]:-moz-window-inactive {
   background-color: var(--helium-inactive-tab-active-background) !important;
-  border: 1px solid var(--helium-tab-separator-color) !important;
+  border: 1px solid var(--helium-tab-border-color) !important;
   border-top: none !important;
   border-bottom: 1px solid var(--helium-tab-border-color) !important;
   border-image: none !important;
@@ -222,7 +222,7 @@ spacer[part="arrowscrollbox-overflow-end-indicator"] {
   --toolbarbutton-border-radius: 0;
   --toolbarbutton-outer-padding: 0;
   margin-left: -1px !important;
-  border-left: 1px solid var(--helium-tab-separator-color);
+  border-left: 1px solid var(--helium-tab-border-color);
 }
 
 .toolbarbutton-1:hover {
