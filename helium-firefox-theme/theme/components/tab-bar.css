@@ -24,24 +24,27 @@ spacer[part="arrowscrollbox-overflow-end-indicator"] {
 
 /* tab labels */
 
-tab {
+.tabbrowser-tab {
   color: var(--helium-tab-color) !important;
+}
+
+.tabbrowser-tab:not([pinned="true"]) {
   min-width: 120px !important;
 }
 
-tab:hover {
+.tabbrowser-tab:hover {
   color: var(--helium-tab-hover-color) !important;
 }
 
-tab[selected] {
+.tabbrowser-tab[selected] {
   color: var(--helium-tab-active-color) !important;
 }
 
-tab:-moz-window-inactive {
+.tabbrowser-tab:-moz-window-inactive {
   color: var(--helium-inactive-tab-color) !important;
 }
 
-tab[selected]:-moz-window-inactive {
+.tabbrowser-tab[selected]:-moz-window-inactive {
   color: var(--helium-inactive-tab-active-color) !important;
 }
 
