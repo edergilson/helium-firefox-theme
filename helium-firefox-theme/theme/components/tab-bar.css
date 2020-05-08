@@ -15,8 +15,8 @@
 }
 
 /* hide scroll buttons and shadows */
-.scrollbutton-down,
-.scrollbutton-up,
+#scrollbutton-down,
+#scrollbutton-up,
 spacer[part="arrowscrollbox-overflow-start-indicator"],
 spacer[part="arrowscrollbox-overflow-end-indicator"] {
   display: none;
